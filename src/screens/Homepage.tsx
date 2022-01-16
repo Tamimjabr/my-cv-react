@@ -1,10 +1,12 @@
 import React from 'react'
+import Description from '../components/Description'
+import { StyledContainer } from '../themes/styled-container'
 
 const Homepage = () => {
   return (
-    <div>
-        Homepage
-    </div>
+    <StyledContainer>
+      <Description />
+    </StyledContainer>
   )
 }
 
