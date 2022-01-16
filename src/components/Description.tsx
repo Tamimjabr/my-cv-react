@@ -47,7 +47,6 @@ const Description: FC = () => {
             <StyledDescriptionContaioner>
               <Avatar src={ProfileImg} alt="porfile-img" sx={{ width: 150, height: 150, m: '1rem auto' }} />
               <StyledH4>Tamim Jabr</StyledH4>
-              <hr />
               <ContactInfo />
             </StyledDescriptionContaioner>
           </Grid>

@@ -1,36 +1,40 @@
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
+import { ListItemAvatar, Divider } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import { GREEN } from '../themes/color';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
+import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded';
 
 const ContactInfo = () => {
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: `${GREEN}` }}>
+    <List sx={{ width: '100%', maxWidth: 360, bgcolor: `${GREEN}`, color: 'white' }}>
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            img1
+            <HomeRoundedIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+        <p>Annerogatan 1B <br />333 30 Smålandsstenar <br /> Gislaved</p>
       </ListItem>
+      <Divider />
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            img2
+            <LocalPhoneRoundedIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Work" secondary="Jan 7, 2014" />
+        <p>0731070078</p>
       </ListItem>
+      <Divider />
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            img 3
+            <AlternateEmailRoundedIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Vacation" secondary="July 20, 2014" />
+        <p>tamim.jabr@outlook.com</p>
       </ListItem>
     </List >
   )
