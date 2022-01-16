@@ -9,7 +9,7 @@ import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded
 
 const ContactInfo = () => {
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: `${GREEN}`, color: 'white' }}>
+    <List sx={{ width: '100%', maxWidth: 360, bgcolor: `${GREEN}`, color: 'white', m: '0' }}>
       <ListItem>
         <ListItemAvatar>
           <Avatar>
