@@ -5,15 +5,22 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import { Typography, Avatar } from '@mui/material';
+import { Typography, Avatar, useMediaQuery } from '@mui/material';
 import { JOB_EXPERIENCE_ARRAY } from '../data/job-experience';
+import { styled } from '@mui/material/styles';
 
+const StyledDiv = styled('div')`
+  padding: 1rem 0;
+  width: 100%;
+  background-color: #F2FFE9;
+  text-align:center;
+`
 
 const JobExperience = () => {
+
   return (
-    <>
-      <Typography variant="h3" >
+    <StyledDiv>
+      <Typography variant="h4" >
         Jobberfarenheter
       </Typography>
       <Timeline position="alternate">
@@ -31,9 +38,9 @@ const JobExperience = () => {
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
-                  <TimelineDot>
+                  <TimelineDot variant='outlined'>
                     <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
-                  </TimelineDot>
+                  </TimelineDot >
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
@@ -46,8 +53,7 @@ const JobExperience = () => {
             </>))
         }
       </Timeline>
-
-    </>
+    </StyledDiv>
   )
 }
 
