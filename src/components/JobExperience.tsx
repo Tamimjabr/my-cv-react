@@ -16,7 +16,62 @@ const StyledDiv = styled('div')`
   text-align:center;
 `
 
+const StyledList = styled('ul')`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  `
+
 const JobExperience = () => {
+  const matches = useMediaQuery('(max-width:750px)');
+
+  const jobs = JOB_EXPERIENCE_ARRAY.map((job) => (
+    <TimelineItem>
+      <TimelineOppositeContent
+        sx={{ m: 'auto 0', fontSize: '1rem' }}
+        align="right"
+        variant="body2"
+        color="text.primary"
+      >
+        {job.description}
+      </TimelineOppositeContent>
+      <TimelineSeparator>
+        <TimelineConnector />
+        <TimelineDot variant='outlined'>
+          <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
+        </TimelineDot >
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <Typography variant="h6" component="span">
+          {job.company}
+        </Typography>
+        <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
+      </TimelineContent>
+    </TimelineItem>))
+
+  const jobsMobile = JOB_EXPERIENCE_ARRAY.map((job) => (
+    <StyledList >
+      <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <Typography variant="h6" component="span">
+          {job.company}
+        </Typography>
+        <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
+      </TimelineContent>
+      <TimelineSeparator>
+        <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
+      </TimelineSeparator>
+      <TimelineOppositeContent
+        sx={{ m: 'auto 0', fontSize: '1rem' }}
+        align="right"
+        variant="body2"
+        color="text.primary"
+      >
+        {job.description}
+      </TimelineOppositeContent>
+    </StyledList>
+  ))
 
   return (
     <StyledDiv>
@@ -24,34 +79,10 @@ const JobExperience = () => {
         Jobberfarenheter
       </Typography>
       <Timeline position="alternate">
-        {
-          JOB_EXPERIENCE_ARRAY.map((job, index) => (
-            <>
-              <TimelineItem>
-                <TimelineOppositeContent
-                  sx={{ m: 'auto 0', fontSize: '1rem' }}
-                  align="right"
-                  variant="body2"
-                  color="text.primary"
-                >
-                  {job.description}
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineConnector />
-                  <TimelineDot variant='outlined'>
-                    <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
-                  </TimelineDot >
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                  <Typography variant="h6" component="span">
-                    {job.company}
-                  </Typography>
-                  <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
-                </TimelineContent>
-              </TimelineItem>
-            </>))
-        }
+        {matches ? <ul>
+          {jobsMobile}
+        </ul> :
+          jobs}
       </Timeline>
     </StyledDiv>
   )
@@ -59,25 +90,3 @@ const JobExperience = () => {
 
 export default JobExperience
 
-
-  //     <TimelineOppositeContent
-  //     sx={{ m: 'auto 0' }}
-  //     variant="body2"
-  //     color="text.secondary"
-  //   >
-  //     Jag har jobbat som röstmottagare i Gislaveds kommun, Valmyndigheten under valet 2018, där min huvudsakliga arbetsuppgift var att ta emot röster 25/8/2018-9/9/2018, samt under valet för europaparlamentet 2019.
-  //   </TimelineOppositeContent>
-  //   <TimelineSeparator>
-  //     <TimelineConnector />
-  //     <TimelineDot color="primary">
-  //       <LaptopMacIcon />
-  //     </TimelineDot>
-  //     <TimelineConnector />
-  //   </TimelineSeparator>
-  //   <TimelineContent sx={{ py: '12px', px: 2 }}>
-  //     <Typography variant="h6" component="span">
-  //       Gislaveds kommun, Valmyndigheten
-  //     </Typography>
-  //     <Typography>Augusti 2018- September 2018</Typography>
-  //   </TimelineContent>
-  // </TimelineItem>
