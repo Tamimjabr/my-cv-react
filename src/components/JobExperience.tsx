@@ -15,13 +15,14 @@ const StyledDiv = styled('div')`
   background-color: #F2FFE9;
   text-align:center;
 `
-
 const StyledList = styled('ul')`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-inline-start: 0;
-  `
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+`
+
 
 const JobExperience = () => {
   const matches = useMediaQuery('(max-width:750px)');
@@ -37,7 +38,6 @@ const JobExperience = () => {
         {job.description}
       </TimelineOppositeContent>
       <TimelineSeparator>
-        <TimelineConnector />
         <TimelineDot variant='outlined'>
           <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
         </TimelineDot >
@@ -45,17 +45,17 @@ const JobExperience = () => {
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
         <Typography variant="h6" component="span">
-          {job.company}
+          {job.company} {job.position && `- ${job.position}`}
         </Typography>
         <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
       </TimelineContent>
     </TimelineItem>))
 
   const jobsMobile = JOB_EXPERIENCE_ARRAY.map((job) => (
-    <StyledList >
+    <StyledList  >
       <TimelineContent sx={{ py: '12px', px: 2 }}>
         <Typography variant="h6" component="span">
-          {job.company}
+          {job.company} {job.position && `- ${job.position}`}
         </Typography>
         <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
       </TimelineContent>
@@ -78,10 +78,11 @@ const JobExperience = () => {
       <Typography variant="h4" >
         Jobberfarenheter
       </Typography>
-      <Timeline position="alternate">
-        {matches ? <ul>
-          {jobsMobile}
-        </ul> :
+      <Timeline position={matches ? 'left' : 'alternate'}>
+        {matches ?
+          <ul>
+            {jobsMobile}
+          </ul> :
           jobs}
       </Timeline>
     </StyledDiv>
