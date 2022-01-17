@@ -1,10 +1,17 @@
 export const JOB_EXPERIENCE_ARRAY = [
   {
+    company: 'Linnéuniversitetet',
+    position: 'Lärarassistent',
+    startDate: '2021-09-01',
+    endDate: 'Pågående',
+    description: 'Lärarassitent för två kurser. Den ena kursen var "Klientsidan" och den andra kursen var "Serversidan". Mina arbetsuppgifter var att hjälpa studenter från årskurs 1 för att lösa olika programmeringsproblem'
+  }
+  , {
     company: 'Postnord',
     position: 'Brevbärare',
     startDate: 'Februari 2016',
     endDate: 'Pågående',
-    description: 'Jag har jobbat på Postnord i Smålandsstenar i mer än 5 år (från 25/2/2016), mina arbetsuppgifter: sortering och utdelning av post med bil till företag, hushåll och postombud.'
+    description: 'Jag har jobbat på Postnord i Smålandsstenar i mer än 6 år (från 25/2/2016), mina arbetsuppgifter: sortering och utdelning av post med bil till företag, hushåll och postombud.'
   },
   {
     company: 'Gislaveds kommun - Valmyndigheten',

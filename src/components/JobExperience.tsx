@@ -6,11 +6,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
 import Typography from '@mui/material/Typography';
-import { GREEN } from '../themes/color';
 import { JOB_EXPERIENCE_ARRAY } from '../data/job-experience';
 
 
@@ -31,7 +27,7 @@ const JobExperience = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Jag har jobbat på Postnord i Smålandsstenar i mer än 5 år (från 25/2/2016), mina arbetsuppgifter: sortering och utdelning av post med bil till företag, hushåll och postombud
+                  {job.description}
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
@@ -42,9 +38,9 @@ const JobExperience = () => {
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                   <Typography variant="h6" component="span">
-                    Postnord
+                    {job.company}
                   </Typography>
-                  <Typography>Februari 2016 - 2022</Typography>
+                  <Typography>{`${job.startDate} - ${job.endDate}`}</Typography>
                 </TimelineContent>
               </TimelineItem>
             </>))
