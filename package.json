@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.6.0",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.64",
     "@mui/material": "^5.2.8",
     "@react-spring/types": "^9.4.2",
     "@testing-library/jest-dom": "^5.16.1",
@@ -21,8 +22,7 @@
     "react-scripts": "5.0.0",
     "react-spring": "^9.4.2",
     "typescript": "^4.5.4",
-    "web-vitals": "^2.1.3",
-    "@mui/lab": "^5.0.0-alpha.64"
+    "web-vitals": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
