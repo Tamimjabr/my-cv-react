@@ -15,4 +15,10 @@ export const StyledContainer = styled('div')`
   @media only screen and (max-width: 800px){
     width: 100%;
   }
+  @media print {
+  display:block;
+  & div{
+    break-inside: avoid;
+  }
+}
 `

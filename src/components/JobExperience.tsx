@@ -15,20 +15,35 @@ const StyledDiv = styled('div')`
   background-color: #F2FFE9;
   text-align:center;
 `
-const StyledList = styled('ul')`
+const StyledListMobile = styled('ul')`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-
+  @media print {
+  display:block;
+  & li{
+    break-inside: avoid;
+  }
+}
 `
+
+
+const StyledList = styled(TimelineItem)`
+  @media print {
+  display:block;
+  & li{
+    break-inside: avoid;
+  }
+  }
+  `
 
 
 const JobExperience = () => {
   const matches = useMediaQuery('(max-width:750px)');
 
   const jobs = JOB_EXPERIENCE_ARRAY.map((job) => (
-    <TimelineItem>
+    <StyledList>
       <TimelineOppositeContent
         sx={{ m: 'auto 0', fontSize: '1rem' }}
         align="right"
@@ -47,17 +62,17 @@ const JobExperience = () => {
         <Typography variant="h6" component="span">
           {job.company} {job.position && `- ${job.position}`}
         </Typography>
-        <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
+        <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate} `}</Typography>
       </TimelineContent>
-    </TimelineItem>))
+    </StyledList>))
 
   const jobsMobile = JOB_EXPERIENCE_ARRAY.map((job) => (
-    <StyledList  >
+    <StyledListMobile  >
       <TimelineContent sx={{ py: '12px', px: 2 }}>
         <Typography variant="h6" component="span">
-          {job.company} {job.position && `- ${job.position}`}
+          {job.company} {job.position && `- ${job.position} `}
         </Typography>
-        <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
+        <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate} `}</Typography>
       </TimelineContent>
       <TimelineSeparator>
         <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
@@ -70,12 +85,12 @@ const JobExperience = () => {
       >
         {job.description}
       </TimelineOppositeContent>
-    </StyledList>
+    </StyledListMobile>
   ))
 
   return (
     <StyledDiv>
-      <Typography variant="h4" >
+      <Typography variant="h4">
         Jobberfarenheter
       </Typography>
       <Timeline position={matches ? 'left' : 'alternate'}>
