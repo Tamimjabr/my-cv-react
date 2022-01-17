@@ -6,7 +6,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
-import Typography from '@mui/material/Typography';
+import { Typography, Avatar } from '@mui/material';
 import { JOB_EXPERIENCE_ARRAY } from '../data/job-experience';
 
 
@@ -22,17 +22,17 @@ const JobExperience = () => {
             <>
               <TimelineItem>
                 <TimelineOppositeContent
-                  sx={{ m: 'auto 0' }}
+                  sx={{ m: 'auto 0', fontSize: '1rem' }}
                   align="right"
                   variant="body2"
-                  color="text.secondary"
+                  color="text.primary"
                 >
                   {job.description}
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot>
-                    <FastfoodIcon />
+                    <Avatar src={job.icon} sx={{ width: 30, height: 30 }} />
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
@@ -40,7 +40,7 @@ const JobExperience = () => {
                   <Typography variant="h6" component="span">
                     {job.company}
                   </Typography>
-                  <Typography>{`${job.startDate} - ${job.endDate}`}</Typography>
+                  <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate}`}</Typography>
                 </TimelineContent>
               </TimelineItem>
             </>))
