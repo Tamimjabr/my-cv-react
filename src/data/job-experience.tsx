@@ -61,5 +61,4 @@ export const JOB_EXPERIENCE_ARRAY = [
     description: 'Jag fick en extraanställning på Junic (som är ett bemanningsföretag) från 27/9/2017. Hos Junic jobbade jag på olika fabriker t.ex AQ i Anderstorp, MA Svets i Anderstorp...etc.',
     icon: JUNIC
   }
-
 ]
