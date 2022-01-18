@@ -6,12 +6,12 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded';
 import { styled } from '@mui/material/styles';
-import { colors } from '../themes/colors';
+import { theme } from '../themes/material-ui-theme';
 
 const StyledList = styled(List)`
   width: 100%;
   max-width: 360px;
-  background-color: ${colors.LIGHT_GREEN};
+  background-color: ${theme.palette.primary.light};
   color: white;
   margin: 0;
   @media print {

@@ -4,7 +4,7 @@ import { Grid, Box, Avatar } from '@mui/material';
 import { useSpring, animated } from "react-spring";
 import ProfileImg from '../img/mypic.png';
 import ContactInfo from './ContactInfo';
-import { colors } from '../themes/colors';
+import { theme } from '../themes/material-ui-theme';
 
 const StyledDescriptionContaioner = styled('div')`
   width: 100%;
@@ -50,7 +50,7 @@ const Description: FC = () => {
     <animated.div style={props}>
       <Box sx={{ width: '100%', height: '100%' }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={12} sm={12} md={4} sx={{ backgroundColor: `${colors.LIGHT_GREEN}`, minHeight: '40vh' }}>
+          <Grid item xs={12} sm={12} md={4} sx={{ backgroundColor: `${theme.palette.primary.main}`, minHeight: '40vh' }}>
             <StyledDescriptionContaioner>
               <Avatar src={ProfileImg} alt="porfile-img" sx={{ width: 170, height: 170, m: '1rem auto' }} />
               <StyledH4>Tamim Jabr</StyledH4>
