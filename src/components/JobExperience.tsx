@@ -28,7 +28,6 @@ const StyledListMobile = styled('ul')`
 }
 `
 
-
 const StyledList = styled(TimelineItem)`
   @media print {
   display:block;
@@ -37,7 +36,6 @@ const StyledList = styled(TimelineItem)`
   }
   }
   `
-
 
 const JobExperience = () => {
   const matches = useMediaQuery('(max-width:750px)');

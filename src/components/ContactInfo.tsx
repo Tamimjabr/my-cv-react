@@ -6,10 +6,26 @@ import { GREEN } from '../themes/color';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded';
+import { styled } from '@mui/material/styles';
+
+const StyledList = styled(List)`
+  width: 100%;
+  max-width: 360px;
+  background-color: ${GREEN};
+  color: white;
+  margin: 0;
+  @media print {
+    color: black;
+    gap: 0;
+    & *{
+      color: black;
+    }
+  }
+`
 
 const ContactInfo = () => {
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: `${GREEN}`, color: 'white', m: '0' }}>
+    <StyledList >
       <ListItem>
         <ListItemAvatar>
           <Avatar>
@@ -36,7 +52,7 @@ const ContactInfo = () => {
         </ListItemAvatar>
         <p>tamim.jabr@outlook.com</p>
       </ListItem>
-    </List >
+    </StyledList >
   )
 }
 
