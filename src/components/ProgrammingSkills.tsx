@@ -15,9 +15,12 @@ const colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 const ProgrammingSkills = () => {
   const state = {
     series: [{
-      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+      data: skills.map(skill => skill.level),
     }],
     options: {
+      chart: {
+        width: '100%'
+      },
       plotOptions: {
         bar: {
           barHeight: '100%',
@@ -76,14 +79,8 @@ const ProgrammingSkills = () => {
       }
     },
   }
-
-
-
-
-
   return (
     <Chart options={state.options} series={state.series} type="bar" width={700} height={500} />
-
   )
 };
 
