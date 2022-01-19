@@ -80,7 +80,7 @@ const ProgrammingSkills = () => {
     },
   }
   return (
-    <Chart options={state.options} series={state.series} type="bar" width={700} height={500} />
+    <Chart options={state.options} series={state.series} type="bar" width={window.innerWidth} height={500} />
   )
 };
 
