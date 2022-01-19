@@ -1,4 +1,5 @@
 import Chart from 'react-apexcharts'
+import { Skill, skills } from '../data/programming-skills';
 
 const colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
   '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
@@ -48,9 +49,7 @@ const ProgrammingSkills = () => {
         colors: ['#000000']
       },
       xaxis: {
-        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-          'United States', 'China', 'India'
-        ],
+        categories: skills.map((skill: Skill) => skill.name),
       },
       yaxis: {
         labels: {
