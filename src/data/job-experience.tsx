@@ -6,7 +6,16 @@ import BURGERKING from '../img/burgerking-logo.png';
 import JUNIC from '../img/junic-logo.jpg';
 import DAYMAKER from '../img/daymaker-logo.png';
 
-export const JOB_EXPERIENCE_ARRAY = [
+type JobExperience = {
+  company: string,
+  position: string,
+  startDate: string,
+  endDate: string,
+  icon: string,
+  description: string,
+}
+
+export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
   {
     company: 'Linnéuniversitetet',
     position: 'Lärarassistent',
