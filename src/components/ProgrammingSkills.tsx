@@ -38,7 +38,7 @@ const ProgrammingSkills = () => {
         formatter: function (val: any, opt: any) {
           return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
         },
-        offsetX: 0,
+        offsetX: 50,
         dropShadow: {
           enabled: true
         }
@@ -54,16 +54,13 @@ const ProgrammingSkills = () => {
       },
       yaxis: {
         labels: {
-          show: false
+          show: true
         }
       },
       title: {
-        text: 'Custom DataLabels',
+        text: 'Programming Languages',
         // align: 'center',
         floating: true
-      },
-      subtitle: {
-        text: 'Category Names as DataLabels inside bars',
       },
       tooltip: {
         theme: 'dark',
@@ -81,8 +78,13 @@ const ProgrammingSkills = () => {
     },
   }
 
+
+
+
+
   return (
-    <Chart options={state.options} series={state.series} type="bar" width={800} height={500} />
+    <Chart options={state.options} series={state.series} type="bar" width={700} height={500} />
+
   )
 };
 
