@@ -13,51 +13,82 @@ const colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
 
 const ProgrammingSkills = () => {
   const state = {
-
     series: [{
-      data: [21, 22, 10, 28, 16, 21, 13, 30]
+      data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
     }],
     options: {
-      colors: colors,
-      chart: {
-        events: {
-          click: function (chart: any, w: any, e: any) {
-            // console.log(chart, w, e)
-          }
-        }
-      },
-      xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
-        labels: {
-          style: {
-            colors: colors,
-            fontSize: '12px'
-          }
-        }
-      },
       plotOptions: {
         bar: {
-          columnWidth: '45%',
+          barHeight: '100%',
           distributed: true,
+          horizontal: true,
+          dataLabels: {
+            position: 'bottom'
+          },
         }
       },
-      dataLabels: {
-        enabled: true
+      colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
+        '#f48024', '#69d2e7'
+      ],
+      // dataLabels: {
+      //   enabled: true,
+      //   textAnchor: 'start',
+      //   style: {
+      //     colors: ['#fff']
+      //   },
+      //   formatter: function (val:any, opt:any) {
+      //     return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+      //   },
+      //   offsetX: 0,
+      //   dropShadow: {
+      //     enabled: true
+      //   }
+      // },
+      stroke: {
+        width: 1,
+        colors: ['#000000']
       },
-      legend: {
-        show: false
+      xaxis: {
+        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
+          'United States', 'China', 'India'
+        ],
       },
+      yaxis: {
+        labels: {
+          show: false
+        }
+      },
+      title: {
+        text: 'Custom DataLabels',
+        // align: 'center',
+        floating: true
+      },
+      // subtitle: {
+      //   text: 'Category Names as DataLabels inside bars',
+      //   align: 'center',
+      // },
+      //   tooltip: {
+      //     theme: 'dark',
+      //     x: {
+      //       show: false
+      //     },
+      //     y: {
+      //       title: {
+      //         formatter: function () {
+      //           return ''
+      //         }
+      //       }
+      //     }
+      //   }
+      // },
+    }
 
-    },
 
-
-  };
-
-
+  }
 
 
   return (
-    <Chart options={state.options} series={state.series} type="bar" width={800} height={350} />
+    <Chart options={state.options} series={state.series} type="bar" width={800} height={500} />
 
   )
 };
