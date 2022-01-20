@@ -1,5 +1,11 @@
 import Chart from 'react-apexcharts'
 import { Skill, skills } from '../data/programming-skills';
+import { styled } from '@mui/material/styles';
+
+const StyledDiv = styled('div')`
+  margin: 2rem 0;
+  width: 80%;
+`
 
 const ProgrammingSkills = () => {
   const state = {
@@ -47,7 +53,7 @@ const ProgrammingSkills = () => {
         }
       },
       title: {
-        text: 'Programming Languages',
+        text: 'Programming Skills',
         // align: 'center',
         floating: true
       },
@@ -67,8 +73,9 @@ const ProgrammingSkills = () => {
     },
   }
   return (
-    <Chart options={state.options} series={state.series} type="bar" width={window.innerWidth} height={500} />
-  )
-};
+    <StyledDiv>
+      <Chart options={state.options} series={state.series} type="bar" width={'100%'} height={600} />
+    </StyledDiv>)
+}
 
 export default ProgrammingSkills;

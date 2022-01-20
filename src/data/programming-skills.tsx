@@ -27,14 +27,14 @@ export const skills: Skill[] = [
   },
   {
     name: 'TypeScript',
-    level: 60,
-    color: '#24f4b9',
+    level: 70,
+    color: '#155864',
     icon: 'https://img.icons8.com/color/48/000000/typescript.png',
   },
   {
     name: 'React',
     level: 80,
-    color: '#7ddfff',
+    color: '#6abdd8',
     icon: 'https://img.icons8.com/color/48/000000/react.png',
   },
   {
