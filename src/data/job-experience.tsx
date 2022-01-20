@@ -37,14 +37,14 @@ export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
     position: 'Röstmottagare',
     startDate: 'Augusti 2018',
     endDate: 'September 2018',
-    description: 'Jag har jobbat som röstmottagare i Gislaveds kommun, Valmyndigheten under valet 2018, där min huvudsakliga arbetsuppgift var att ta emot röster 25/8/2018-9/9/2018, samt under valet för europaparlamentet 2019.', icon: GISLAVEDSKOMMUN
+    description: 'Jag jobbade som röstmottagare i Gislaveds kommun, Valmyndigheten under valet 2018, där min huvudsakliga arbetsuppgift var att ta emot röster 25/8/2018-9/9/2018, samt under valet för europaparlamentet 2019.', icon: GISLAVEDSKOMMUN
   },
   {
     company: 'Daymaker',
     position: 'Kundmötestestare',
     startDate: 'Januari 2018',
     endDate: 'Januari 2020',
-    description: 'Jag har ett extrajobb som observatör/kundmötestestare på Daymaker, där testar vi hur företag och organisationer tar hand om sina kunder.',
+    description: 'Jag fick ett extrajobb som observatör/kundmötestestare på Daymaker, där testar vi hur företag och organisationer tar hand om sina kunder.',
     icon: DAYMAKER
 
   }
@@ -53,14 +53,14 @@ export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
     position: 'Orderplockare',
     startDate: 'September 2016',
     endDate: 'April 2017',
-    description: 'Jag har ett extrajobb som observatör/kundmötestestare på Daymaker, där testar vi hur företag och organisationer tar hand om sina kunder.',
+    description: 'Jag hade ett extrajobb som observatör/kundmötestestare på Daymaker, där testar vi hur företag och organisationer tar hand om sina kunder.',
     icon: CITYGROSS
   }, {
     company: 'Burger King',
     position: 'Kassör',
     startDate: 'Juli 2017',
     endDate: 'September 2017',
-    description: 'Jag har jobbat på Burger King i Gislaved i två månader som extrajobb under helgarna och mina semesterdagar (från 8/7/2017- 8/9/2017). Jag har jobbat först och främst i kassan.',
+    description: 'Jag fick ett extrajobb på Burger King i Gislaved i två månader under helgarna och mina semesterdagar. Jag har jobbat först och främst i kassan.',
     icon: BURGERKING
   }, {
     company: 'Junic - Bemanningsföretag',

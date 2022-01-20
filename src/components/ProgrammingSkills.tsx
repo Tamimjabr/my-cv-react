@@ -1,10 +1,12 @@
 import Chart from 'react-apexcharts'
 import { Skill, skills } from '../data/programming-skills';
 import { styled } from '@mui/material/styles';
+import { Typography } from '@mui/material';
 
 const StyledDiv = styled('div')`
   margin: 2rem 0;
   width: 80%;
+  text-align:center;
 `
 
 const ProgrammingSkills = () => {
@@ -28,7 +30,7 @@ const ProgrammingSkills = () => {
       },
       colors: skills.map(skill => skill.color),
       dataLabels: {
-        enabled: true,
+        enabled: false,
         style: {
           colors: ['#fff']
         },
@@ -41,21 +43,20 @@ const ProgrammingSkills = () => {
         }
       },
       stroke: {
-        width: 1,
-        colors: ['#000000']
+        width: 0.5,
+        colors: ['#ffffff']
       },
       xaxis: {
         categories: skills.map((skill: Skill) => skill.name),
+
       },
       yaxis: {
         labels: {
-          show: true
+          show: true,
+          style: {
+            fontSize: '0.8rem'
+          }
         }
-      },
-      title: {
-        text: 'Programming Skills',
-        // align: 'center',
-        floating: true
       },
       tooltip: {
         theme: 'dark',
@@ -74,6 +75,9 @@ const ProgrammingSkills = () => {
   }
   return (
     <StyledDiv>
+      <Typography variant="h4" sx={{ m: '0 0 2rem 0' }}>
+        Programmeringskunskaper
+      </Typography>
       <Chart options={state.options} series={state.series} type="bar" width={'100%'} height={600} />
     </StyledDiv>)
 }
