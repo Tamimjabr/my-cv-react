@@ -16,17 +16,15 @@ const StyledDiv = styled('div')`
   text-align:center;
 `
 const StyledListMobile = styled('ul')`
-  display: flex;
+  /* display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   @media print {
   display:block;
-  & li{
-    break-inside: avoid;
-  }
 }
 `
+
 
 const StyledList = styled(TimelineItem)`
   @media print {
@@ -34,7 +32,7 @@ const StyledList = styled(TimelineItem)`
   & li{
     break-inside: avoid;
   }
-  }
+}
   `
 
 const JobExperience = () => {
@@ -57,7 +55,7 @@ const JobExperience = () => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span">
+        <Typography variant="h6" >
           {job.company} {job.position && `- ${job.position}`}
         </Typography>
         <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate} `}</Typography>
@@ -67,7 +65,7 @@ const JobExperience = () => {
   const jobsMobile = JOB_EXPERIENCE_ARRAY.map((job) => (
     <StyledListMobile  >
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span">
+        <Typography variant="h6" sx={{ textAlign: 'left' }}>
           {job.company} {job.position && `- ${job.position} `}
         </Typography>
         <Typography color='text.secondary'>{`${job.startDate} - ${job.endDate} `}</Typography>

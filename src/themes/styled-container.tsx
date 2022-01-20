@@ -17,7 +17,7 @@ export const StyledContainer = styled('div')`
   }
   @media print {
   display:block;
-  & div{
+  & div, & ul > ul {
     break-inside: avoid;
   }
 }
