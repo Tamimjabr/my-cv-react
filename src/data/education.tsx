@@ -37,7 +37,7 @@ export const educations: Education[] = [{
   period: '2018'
 },
 {
-  title: 'Komvux i Gislaveds gymnasium',
+  title: 'Komvux i Gislaveds Gymnasium',
   description: 'Jag läste svenska som andra språk SAS 1+2+3 (A betyg på alla de tre) engelska 6 (C betyg), engelska 5 ( B betyg) samt fysik 2 (B betyg) och samhällskunskap 1b (fick B betyg).',
   period: ''
 }, {
