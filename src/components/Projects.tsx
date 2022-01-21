@@ -45,7 +45,7 @@ const Projects = () => {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {project.swedishDescription}
-                    {`\nTekniker: ${project.techniques.join(', ')}`}
+                    {`Tekniker: ${project.techniques.join(', ')}`}
                   </Typography>
                 </CardContent>
               </CardActionArea>
