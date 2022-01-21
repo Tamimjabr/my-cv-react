@@ -33,15 +33,27 @@ const StyledDiv = styled('div')`
 
 interface Props {
   fontSize?: 'small' | 'medium' | 'large';
+  facebook: string;
+  github: string;
+  instagram: string;
+  linkedin: string;
 }
 
-const SocialMediaIcons: FC<Props> = ({ fontSize = 'large' }) => {
+const SocialMediaIcons: FC<Props> = ({ fontSize = 'large', facebook, github, instagram, linkedin }) => {
   return (
     <StyledDiv >
-      <FacebookRoundedIcon fontSize={fontSize} sx={{ color: '#379ad6' }} />
-      <GitHubIcon fontSize={fontSize} sx={{ color: 'black' }} />
-      <InstagramIcon fontSize={fontSize} sx={{ color: '#9a37ac' }} />
-      <LinkedInIcon fontSize={fontSize} sx={{ color: '#03a3ec' }} />
+      <a href={facebook} target='_blank' rel="noreferrer">
+        <FacebookRoundedIcon fontSize={fontSize} sx={{ color: '#50b2f0' }} />
+      </a>
+      <a href={github} target='_blank' rel="noreferrer">
+        <GitHubIcon fontSize={fontSize} sx={{ color: 'black' }} />
+      </a>
+      <a href={instagram} target='_blank' rel="noreferrer">
+        <InstagramIcon fontSize={fontSize} sx={{ color: '#9831aa' }} />
+      </a>
+      <a href={linkedin} target='_blank' rel="noreferrer">
+        <LinkedInIcon fontSize={fontSize} sx={{ color: '#ffffff' }} />
+      </a>
     </StyledDiv>
   )
 };

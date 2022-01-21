@@ -53,7 +53,11 @@ const ContactInfo = () => {
       </ListItem>
       <Divider />
       <ListItem>
-        <SocialMediaIcons fontSize='large' />
+        <SocialMediaIcons fontSize='large'
+          facebook="https://www.facebook.com/tamim.jabr"
+          instagram='https://www.instagram.com/tamim.jabr/'
+          github='https://github.com/Tamimjabr'
+          linkedin='https://www.linkedin.com/in/tamim-jabr-2533bb1b9/' />
       </ListItem>
     </StyledList >
   )
