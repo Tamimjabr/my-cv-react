@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles'
-
+import { theme } from './material-ui-theme'
 export const StyledContainer = styled('div')`
   width: 100%;
   margin: auto; 

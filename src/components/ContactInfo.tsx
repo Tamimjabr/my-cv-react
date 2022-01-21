@@ -11,7 +11,7 @@ import { theme } from '../themes/material-ui-theme';
 const StyledList = styled(List)`
   width: 100%;
   max-width: 360px;
-  background-color: ${theme.palette.primary.light};
+  background-color: ${theme.palette.primary.main};
   color: white;
   margin: 0;
   @media print {

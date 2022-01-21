@@ -7,9 +7,10 @@ import ContactInfo from './ContactInfo';
 import { theme } from '../themes/material-ui-theme';
 
 const StyledDescriptionContaioner = styled('div')`
+  margin:0;
+  padding:0;
   width: 100%;
   height: 100%;
-  margin: auto;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -58,7 +59,7 @@ const Description: FC = () => {
             </StyledDescriptionContaioner>
           </Grid>
           <Grid item xs={12} sm={12} md={8}>
-            <StyledDescriptionContaioner>
+            <StyledDescriptionContaioner sx={{ backgroundColor: 'white' }}>
               <h3>Vem är jag?</h3>
               <StyledText>Tamim Jabr heter jag och är 26 år, är den lagspelande problemlösaren med passion
                 för programmering. Jag är en trevlig och social person som

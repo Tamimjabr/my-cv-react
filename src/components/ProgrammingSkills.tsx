@@ -75,7 +75,7 @@ const ProgrammingSkills = () => {
   }
   return (
     <StyledDiv>
-      <Typography variant="h4" sx={{ m: '0 0 2rem 0' }}>
+      <Typography variant="h4" sx={{ m: '0 0 2rem 0', wordBreak: 'break-word' }}>
         Programmeringskunskaper
       </Typography>
       <Chart options={state.options} series={state.series} type="bar" width={'100%'} height={600} />
