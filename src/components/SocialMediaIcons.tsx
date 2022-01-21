@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { styled } from '@mui/material/styles';
+import { theme } from '../themes/material-ui-theme';
 
 
 const StyledDiv = styled('div')`
@@ -14,11 +15,12 @@ const StyledDiv = styled('div')`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  & > svg {
-    background-color:white;
+  & > a > svg {
+    color:white;
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
     &:hover {
+      color:${theme.palette.primary.main};
       background-color: white;
       border-radius: 50%;
       transform: scale(1.5);
@@ -43,16 +45,16 @@ const SocialMediaIcons: FC<Props> = ({ fontSize = 'large', facebook, github, ins
   return (
     <StyledDiv >
       <a href={facebook} target='_blank' rel="noreferrer">
-        <FacebookRoundedIcon fontSize={fontSize} sx={{ color: '#50b2f0' }} />
+        <FacebookRoundedIcon fontSize={fontSize} />
       </a>
       <a href={github} target='_blank' rel="noreferrer">
-        <GitHubIcon fontSize={fontSize} sx={{ color: 'black' }} />
+        <GitHubIcon fontSize={fontSize} />
       </a>
       <a href={instagram} target='_blank' rel="noreferrer">
-        <InstagramIcon fontSize={fontSize} sx={{ color: '#9831aa' }} />
+        <InstagramIcon fontSize={fontSize} />
       </a>
       <a href={linkedin} target='_blank' rel="noreferrer">
-        <LinkedInIcon fontSize={fontSize} sx={{ color: '#ffffff' }} />
+        <LinkedInIcon fontSize={fontSize} />
       </a>
     </StyledDiv>
   )
