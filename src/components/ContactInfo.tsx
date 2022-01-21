@@ -7,6 +7,7 @@ import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded';
 import { styled } from '@mui/material/styles';
 import { theme } from '../themes/material-ui-theme';
+import SocialMediaIcons from './SocialMediaIcons';
 
 const StyledList = styled(List)`
   width: 100%;
@@ -49,6 +50,10 @@ const ContactInfo = () => {
           </Avatar>
         </ListItemAvatar>
         <p>tamim.jabr@outlook.com</p>
+      </ListItem>
+      <Divider />
+      <ListItem>
+        <SocialMediaIcons fontSize='large' />
       </ListItem>
     </StyledList >
   )
