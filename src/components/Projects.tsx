@@ -9,7 +9,7 @@ import { theme } from '../themes/material-ui-theme';
 
 const StyledProjectsContainer = styled('div')`
   width: 100%;
-  background-color: ${theme.palette.primary.light};
+  background-color: ${theme.palette.primary.main};
   text-align: center;
 `
 
@@ -26,18 +26,19 @@ const StyledDiv = styled('div')`
 const Projects = () => {
   return (
     <StyledProjectsContainer>
-      <Typography variant="h4" sx={{ m: '2rem 0 2rem 0' }}>
+      <Typography variant="h4" sx={{ m: '2rem 0 2rem 0', color: 'white' }}>
         Mina Projekt
       </Typography>
       <StyledDiv>
         {
           projects.map(project => (
-            < Card sx={{ minWidth: '80%', maxWidth: '500px' }}>
+            < Card sx={{ minWidth: '40%', maxWidth: '500px', borderRadius: '1rem', padding: '1rem', margin: '0 0 3rem' }}>
               <CardActionArea>
                 <CardMedia
                   component="iframe"
                   height="300"
                   src={project.URL}
+                  sx={{ borderRadius: '10px' }}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
