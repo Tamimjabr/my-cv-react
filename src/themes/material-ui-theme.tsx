@@ -8,5 +8,5 @@ export const theme = createTheme({
       dark: '#406343',
       contrastText: '#ffffff',
     }
-  },
+  }
 });

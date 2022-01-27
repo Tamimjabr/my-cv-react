@@ -5,13 +5,14 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import ImageIcon from '@mui/icons-material/Image';
-import { educations } from '../data/education';
+import { Education as EducationType, educations } from '../data/education';
 import { Divider } from '@mui/material';
+
 
 const Education = () => {
   return (
     < List sx={{ width: '100%', maxWidth: 700, bgcolor: 'background.paper' }}>
-      {educations.map((education: any) => (
+      {educations.map((education: EducationType, index: number) => (
         <>
           < ListItem >
             <ListItemAvatar>
@@ -19,9 +20,15 @@ const Education = () => {
                 <ImageIcon />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary={education.description} secondary={education.period} />
+            <div>
+              <ListItemText primary={education.title} secondary={education.period} primaryTypographyProps={{
+                color: 'primary.dark',
+                fontWeight: '700',
+              }} />
+              <ListItemText primary={education.description} />
+            </div>
           </ ListItem>
-          <Divider variant="middle" component="li" />
+          {index !== educations.length - 1 && <Divider />}
         </>
       )
       )}
