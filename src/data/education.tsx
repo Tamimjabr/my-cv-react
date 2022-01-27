@@ -19,7 +19,7 @@ export const educations: Education[] = [{
   period: '2020'
 }, {
   title: 'Sololearn & W3schools',
-  description: 'jälvlärd webbutvecklare på båda sololearn.com & w3schools.com, har certifikat inom HTML, CSS, JS, jQuery, SQL och React',
+  description: 'Självlärd webbutvecklare på båda sololearn.com & w3schools.com, har certifikat inom HTML, CSS, JS, jQuery, SQL och React',
   period: '2019 - 2020'
 }, {
   title: 'HLR-utbildning',

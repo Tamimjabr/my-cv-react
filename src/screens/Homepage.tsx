@@ -1,4 +1,5 @@
 import Description from '../components/Description'
+import Education from '../components/Education'
 import JobExperience from '../components/JobExperience'
 import ProgrammingSkills from '../components/ProgrammingSkills'
 import Projects from '../components/Projects'
@@ -11,6 +12,7 @@ const Homepage = () => {
       <JobExperience />
       <ProgrammingSkills />
       <Projects />
+      <Education />
     </StyledContainer>
   )
 }
