@@ -4,7 +4,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
-import ImageIcon from '@mui/icons-material/Image';
 import { Education as EducationType, educations } from '../data/education';
 import { Divider, Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';

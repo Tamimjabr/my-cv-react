@@ -1,6 +1,5 @@
 import LNU from '../img/lnu-logo.png';
 import POSTNORD from '../img/postnord-logo.png';
-import GISLAVEDSKOMMUN from '../img/gislavedskommun-logo.png';
 import GISLAVEDSGYMNASIUM from '../img/gislavedsgymnasium-logo.png';
 
 export type Education = {
