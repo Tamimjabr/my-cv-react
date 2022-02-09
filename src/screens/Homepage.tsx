@@ -1,4 +1,5 @@
 import Description from '../components/Description'
+import DrivingLicense from '../components/DrivingLicense'
 import Education from '../components/Education'
 import JobExperience from '../components/JobExperience'
 import ProgrammingSkills from '../components/ProgrammingSkills'
@@ -15,6 +16,7 @@ const Homepage = () => {
       <Projects />
       <Education />
       <References />
+      <DrivingLicense />
     </StyledContainer>
   )
 }
