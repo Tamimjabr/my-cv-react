@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import { styled } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const StyledContainer = styled('div')`
   padding: 1rem 0;
@@ -24,9 +25,9 @@ const StyledContainer = styled('div')`
   }
 `
 
-
-
 const References = () => {
+  const matches = useMediaQuery('(max-width:750px)');
+
   return (
     <StyledContainer>
       <Typography variant="h4">
@@ -34,7 +35,9 @@ const References = () => {
       </Typography>
       <div className="card-holder">
         {references.map(ref => (
-          <Card sx={{ width: '22rem', height: '12rem', maxWidth: 300 }}>
+          <Card sx={{
+            width: `${matches ? "90%" : "40%"} `, height: '12rem',
+          }}>
             <CardHeader
               avatar={<Avatar src={ref.icon} aria-label="reference" >{ref.icon} </Avatar>}
               title={ref.name}
@@ -51,7 +54,7 @@ const References = () => {
           </Card>
         ))}
       </div>
-    </StyledContainer>
+    </StyledContainer >
   );
 };
 

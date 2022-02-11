@@ -20,7 +20,7 @@ const DrivingLicense = () => {
         Körkort
       </Typography>
       <Card sx={{
-        minWidth: '50%', textAlign: 'center', backgroundColor: 'rgba(255, 255, 255, 0.9)'
+        minWidth: '50%', textAlign: 'center', backgroundColor: 'rgba(255, 255, 255, 0.9)',borderRadius: '0.5rem',
       }}>
         <CardContent>
           <Typography variant="body2" sx={{ fontSize: '1.4rem' }} >
