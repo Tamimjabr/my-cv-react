@@ -10,7 +10,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 const StyledContainer = styled('div')`
   padding: 1rem 0;
   background-color: #F2FFE9;
-  width: 100%;
+  height: 100%;
+  width: 60%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

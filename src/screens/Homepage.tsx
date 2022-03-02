@@ -6,6 +6,20 @@ import ProgrammingSkills from '../components/ProgrammingSkills'
 import Projects from '../components/Projects'
 import References from '../components/References'
 import { StyledContainer } from '../themes/styled-container'
+import { styled } from '@mui/material/styles';
+
+const StyledSubContainer = styled('div')`
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  @media only screen and (max-width: 880px){
+    flex-flow: column nowrap;
+    & > div{
+      width: 100%;
+    }
+  }
+`
+
 
 const Homepage = () => {
   return (
@@ -15,8 +29,10 @@ const Homepage = () => {
       <ProgrammingSkills />
       <Projects />
       <Education />
-      <References />
-      <DrivingLicense />
+      <StyledSubContainer>
+        <References />
+        <DrivingLicense />
+      </StyledSubContainer>
     </StyledContainer>
   )
 }
