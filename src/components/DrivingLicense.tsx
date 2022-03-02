@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Typography } from '@mui/material'
+import { Card, CardContent, Typography } from '@mui/material'
 import { theme } from '../themes/material-ui-theme'
 import { styled } from '@mui/material/styles';
 
