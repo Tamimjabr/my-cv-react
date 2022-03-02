@@ -27,25 +27,25 @@ export const skills: Skill[] = [
   },
   {
     name: 'TypeScript',
-    level: 70,
+    level: 80,
     color: '#155864',
     icon: 'https://img.icons8.com/color/48/000000/typescript.png',
   },
   {
     name: 'React',
-    level: 80,
+    level: 85,
     color: '#6abdd8',
     icon: 'https://img.icons8.com/color/48/000000/react.png',
   },
   {
     name: 'Node.js',
-    level: 90,
+    level: 95,
     color: '#64995f',
     icon: 'https://img.icons8.com/color/48/000000/nodejs.png',
   },
   {
     name: 'Express',
-    level: 90,
+    level: 95,
     color: '#31312f',
     icon: 'https://img.icons8.com/color/48/000000/express.png',
   },
@@ -66,7 +66,12 @@ export const skills: Skill[] = [
   },
   {
     name: 'C#',
-    level: 60,
+    level: 40,
     color: '#7f3089',
+  },
+  {
+    name: 'Python',
+    level: 60,
+    color: '#f2c924',
   }
 ]
