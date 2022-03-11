@@ -2,7 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Link } from '@mui/material';
+import { Button, CardActionArea, CardActions, Chip, Link } from '@mui/material';
 import { projects } from '../data/projects';
 import { styled } from '@mui/material/styles';
 import { theme } from '../themes/material-ui-theme';
@@ -46,7 +46,11 @@ const Projects = () => {
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     {project.swedishDescription}
-                    {`Tekniker: ${project.techniques.join(', ')}`}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Tekniker: {project.techniques.map(tech => (
+                      <Chip label={tech} sx={{ m: '0.3rem' }} />
+                    ))}
                   </Typography>
                 </CardContent>
               </CardActionArea>
