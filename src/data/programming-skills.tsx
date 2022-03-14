@@ -27,7 +27,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'TypeScript',
-    level: 80,
+    level: 85,
     color: '#155864',
     icon: 'https://img.icons8.com/color/48/000000/typescript.png',
   },
@@ -61,7 +61,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'SQL',
-    level: 60,
+    level: 70,
     color: '#aabbb6',
   },
   {
