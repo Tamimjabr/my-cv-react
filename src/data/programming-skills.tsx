@@ -73,5 +73,9 @@ export const skills: Skill[] = [
     name: 'Python',
     level: 60,
     color: '#f2c924',
+  },{
+    name:'Nextjs',
+    level:70,
+    color:'#000000',
   }
 ]
