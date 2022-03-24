@@ -6,7 +6,8 @@ import ProgrammingSkills from '../components/ProgrammingSkills'
 import Projects from '../components/Projects'
 import References from '../components/References'
 import { StyledContainer } from '../themes/styled-container'
-import { styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles'
+
 
 const StyledSubContainer = styled('div')`
   width: 100%;
@@ -20,14 +21,14 @@ const StyledSubContainer = styled('div')`
   }
 `
 
-
 const Homepage = () => {
+
   return (
     <StyledContainer>
       <Description />
       <JobExperience />
       <ProgrammingSkills />
-      <Projects />
+      <Projects  />
       <Education />
       <StyledSubContainer>
         <References />

@@ -1,7 +1,10 @@
+import { useEffect } from 'react'
 import Chart from 'react-apexcharts'
 import { Skill, skills } from '../data/programming-skills';
 import { styled } from '@mui/material/styles';
 import { Typography } from '@mui/material';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const StyledDiv = styled('div')`
   margin: 2rem 0;
@@ -10,6 +13,11 @@ const StyledDiv = styled('div')`
 `
 
 const ProgrammingSkills = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   const state = {
     series: [{
       data: skills.map(skill => skill.level),
@@ -74,7 +82,7 @@ const ProgrammingSkills = () => {
     },
   }
   return (
-    <StyledDiv>
+    <StyledDiv data-aos='fade-left'>
       <Typography variant="h4" sx={{ m: '0 0 2rem 0', wordBreak: 'break-word' }}>
         Programmeringskunskaper
       </Typography>

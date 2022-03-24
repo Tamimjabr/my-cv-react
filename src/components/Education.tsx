@@ -7,10 +7,17 @@ import Avatar from '@mui/material/Avatar';
 import { Education as EducationType, educations } from '../data/education';
 import { Divider, Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const Education = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
-    <>
+    <div data-aos='fade-up' >
       <Typography variant="h4" sx={{ m: '2rem 0 2rem 0', wordBreak: 'break-word' }}>
         Utbildning
       </Typography>
@@ -36,7 +43,7 @@ const Education = () => {
         )
         )}
       </List >
-    </>
+    </div>
   );
 };
 
