@@ -19,4 +19,10 @@ export const projects: Project[] = [{
   swedishDescription: 'En e-handelswebbplats för att sälja presenter.',
   URL: 'https://www.mellinuspresent.se',
   techniques: ['React', 'Bootstrap', 'Javascript', 'Express', 'Node.js', 'Mongodb', 'Jest']
+}, {
+  title: 'Gitlab OAuth App',
+  englishDescription: 'An OAuth app for Gitlab. It allows users to login with their Gitlab account, see their profile information and activities. The application implements OAuth 2.0 without using a third party library like Passport.',
+  swedishDescription: 'En OAuth-app för Gitlab. Den tillåter användare att logga in med deras Gitlab-konto, se deras profilinformation och aktiviteter. Applikationen implementerar OAuth 2.0 utan att använda en tredje parts bibliotek som Passport.',
+  URL: 'https://gitlab-oauth-nextjs-app.vercel.app',
+  techniques: ['Nextjs', 'Material-UI', 'Typescript', 'Server Side Rendering', 'OAuth 2.0']
 }]
