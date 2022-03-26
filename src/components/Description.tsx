@@ -47,13 +47,10 @@ const Description: FC = () => {
         <Grid item className="animate__animated animate__backInRight" xs={12} sm={12} md={8}>
           <StyledDescriptionContaioner sx={{ backgroundColor: 'white' }}>
             <h3>Vem är jag?</h3>
-            <StyledText>Tamim Jabr heter jag och är 26 år, är den lagspelande problemlösaren med passion
-              för programmering. Jag är en trevlig och social person som
-              behärskar svenska, arabiska och engelska. Jag kan jobba ensamt men
-              jag jobbar hellre i en grupp där strävar man tillsammans efter ett
-              gemensamt mål. Jag kan prioritera och hålla mig lugn även när det
-              finns mycket att göra. På min fritid springer jag eller tränar på
-              gymmet.
+            <StyledText>Tamim Jabr heter jag och är 26 år, Jag är en lagspelande problemlösare med passion för programmering.
+              Jag är en trevlig och social person som behärskar svenska, arabiska och engelska.
+              Jag kan jobba ensam men jag jobbar hellre i en grupp där vi tillsammans strävar mot ett gemensamt mål.
+              Jag kan prioritera och hålla mig lugn även när det finns mycket att göra. På min fritid springer jag eller tränar på gymmet.
             </StyledText>
           </StyledDescriptionContaioner>
         </Grid>
