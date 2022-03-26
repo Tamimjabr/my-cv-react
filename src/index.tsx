@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom';
 import './index.css';
+import 'aos/dist/aos.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { theme } from './themes/material-ui-theme'

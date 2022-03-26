@@ -8,7 +8,6 @@ import { Education as EducationType, educations } from '../data/education';
 import { Divider, Typography } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import Aos from 'aos'
-import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 
 const Education = () => {
