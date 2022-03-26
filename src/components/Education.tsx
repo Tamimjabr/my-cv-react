@@ -18,7 +18,7 @@ const Education = () => {
 
   return (
     <div data-aos='fade-up' >
-      <Typography variant="h4" sx={{ m: '2rem 0 2rem 0', wordBreak: 'break-word' }}>
+      <Typography variant="h4" sx={{ m: '2rem auto', textAlign: 'center' }}>
         Utbildning
       </Typography>
       < List sx={{ width: '100%', maxWidth: 700, bgcolor: 'background.paper' }}>
