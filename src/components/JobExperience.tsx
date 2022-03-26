@@ -27,7 +27,6 @@ const StyledListMobile = styled('ul')`
 }
 `
 
-
 const StyledList = styled(TimelineItem)`
   @media print {
   display:block;

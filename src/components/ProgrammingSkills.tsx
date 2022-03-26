@@ -81,7 +81,7 @@ const ProgrammingSkills = () => {
     },
   }
   return (
-    <StyledDiv data-aos='fade-left'>
+    <StyledDiv data-aos='fade'>
       <Typography variant="h4" sx={{ m: '0 0 2rem 0', wordBreak: 'break-word' }}>
         Programmeringskunskaper
       </Typography>
