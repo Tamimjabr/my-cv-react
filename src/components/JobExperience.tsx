@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -8,6 +9,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { Typography, Avatar, useMediaQuery } from '@mui/material';
 import { JOB_EXPERIENCE_ARRAY } from '../data/job-experience';
 import { styled } from '@mui/material/styles';
+import Aos from 'aos'
 
 const StyledDiv = styled('div')`
   padding: 1rem 0;
@@ -38,8 +40,12 @@ const StyledList = styled(TimelineItem)`
 const JobExperience = () => {
   const matches = useMediaQuery('(max-width:750px)');
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   const jobs = JOB_EXPERIENCE_ARRAY.map((job) => (
-    <StyledList>
+    <StyledList >
       <TimelineOppositeContent
         sx={{ m: 'auto 0', fontSize: '1rem' }}
         align="right"
@@ -85,7 +91,7 @@ const JobExperience = () => {
   ))
 
   return (
-    <StyledDiv>
+    <StyledDiv data-aos='slide-up'>
       <Typography variant="h4">
         Jobberfarenheter
       </Typography>

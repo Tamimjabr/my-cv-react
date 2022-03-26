@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -6,6 +7,7 @@ import { Button, CardActionArea, CardActions, Chip, Link } from '@mui/material';
 import { projects } from '../data/projects';
 import { styled } from '@mui/material/styles';
 import { theme } from '../themes/material-ui-theme';
+import Aos from 'aos'
 
 const StyledProjectsContainer = styled('div')`
   width: 100%;
@@ -24,8 +26,13 @@ const StyledDiv = styled('div')`
 `
 
 const Projects = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
-    <StyledProjectsContainer>
+    <StyledProjectsContainer data-aos='fade'>
       <Typography variant="h4" sx={{ m: '2rem 0 2rem 0', color: 'white' }}>
         Mina Projekt
       </Typography>

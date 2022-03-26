@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Description from '../components/Description'
 import DrivingLicense from '../components/DrivingLicense'
 import Education from '../components/Education'
@@ -7,7 +8,7 @@ import Projects from '../components/Projects'
 import References from '../components/References'
 import { StyledContainer } from '../themes/styled-container'
 import { styled } from '@mui/material/styles'
-
+import Aos from 'aos'
 
 const StyledSubContainer = styled('div')`
   width: 100%;
@@ -23,14 +24,18 @@ const StyledSubContainer = styled('div')`
 
 const Homepage = () => {
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <StyledContainer>
       <Description />
       <JobExperience />
       <ProgrammingSkills />
-      <Projects  />
+      <Projects />
       <Education />
-      <StyledSubContainer>
+      <StyledSubContainer data-aos='slide-up'>
         <References />
         <DrivingLicense />
       </StyledSubContainer>

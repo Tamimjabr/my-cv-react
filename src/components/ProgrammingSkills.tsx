@@ -4,7 +4,6 @@ import { Skill, skills } from '../data/programming-skills';
 import { styled } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 const StyledDiv = styled('div')`
   margin: 2rem 0;
