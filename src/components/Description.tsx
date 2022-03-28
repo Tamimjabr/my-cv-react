@@ -24,6 +24,7 @@ const StyledH4 = styled('h4')`
 font-family: 'Gochi Hand', cursive;
 font-family: 'Walter Turncoat', cursive;
 color: #f5f5f5;
+letter-spacing: 0.25rem;
 `
 
 const StyledText = styled('p')`
