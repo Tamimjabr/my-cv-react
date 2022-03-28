@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import { ListItemAvatar, Divider } from '@mui/material';
@@ -9,7 +8,6 @@ import AlternateEmailRoundedIcon from '@mui/icons-material/AlternateEmailRounded
 import { styled } from '@mui/material/styles';
 import { theme } from '../themes/material-ui-theme';
 import SocialMediaIcons from './SocialMediaIcons';
-import Aos from 'aos'
 
 const StyledList = styled(List)`
   width: 100%;
@@ -26,13 +24,9 @@ const StyledList = styled(List)`
 
 const ContactInfo = () => {
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 })
-  }, [])
-
   return (
     <StyledList >
-      <ListItem data-aos='slide-left'>
+      <ListItem className="animate__animated animate__backInLeft">
         <ListItemAvatar>
           <Avatar>
             <HomeRoundedIcon />
@@ -41,7 +35,7 @@ const ContactInfo = () => {
         <p>Annerogatan 1B <br />333 30 Smålandsstenar <br /> Gislaved</p>
       </ListItem>
       <Divider />
-      <ListItem data-aos='slide-right'>
+      <ListItem className="animate__animated animate__backInRight">
         <ListItemAvatar>
           <Avatar>
             <LocalPhoneRoundedIcon />
@@ -50,7 +44,7 @@ const ContactInfo = () => {
         <p>0731070078</p>
       </ListItem>
       <Divider />
-      <ListItem data-aos='slide-left'>
+      <ListItem className="animate__animated animate__backInLeft">
         <ListItemAvatar>
           <Avatar>
             <AlternateEmailRoundedIcon />
@@ -59,7 +53,7 @@ const ContactInfo = () => {
         <p>tamim.jabr@outlook.com</p>
       </ListItem>
       <Divider />
-      <ListItem data-aos='slide-right'>
+      <ListItem className="animate__animated animate__backInRight">
         <SocialMediaIcons fontSize='large'
           facebook="https://www.facebook.com/tamim.jabr"
           instagram='https://www.instagram.com/tamim.jabr/'
