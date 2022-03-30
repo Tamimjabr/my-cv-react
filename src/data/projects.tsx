@@ -30,7 +30,7 @@ export const projects: Project[] = [{
   englishDescription: 'An application that uses service workers, web manifests. The Application look like a desktop and has the following applications: memory game, chat app, tic-ta-toe game, and a clock.',
   swedishDescription: 'En applikation som använder service workers, webbmanifestfil. Applikationen ser ut som ett skrivbord och har följande applikationer: minnesspel, chattapp, tic-ta-toe-spelet, och en klocka. Appen är byggd i slutet av första terminen på webbprogrammerare programmet.',
   URL: 'https://pwa-installable-app.netlify.app',
-  techniques: ['Html', 'CSS', 'Javascript', 'Service Workers', 'Web Manifest']
+  techniques: ['Html', 'CSS', 'Javascript', 'Service Worker', 'Web Manifest file']
 }, {
   title: 'Roséns Fastigheter',
   englishDescription: 'A website for a real estate company. It has a contact form and information about their real state.',
