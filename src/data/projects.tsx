@@ -24,7 +24,7 @@ export const projects: Project[] = [{
   englishDescription: 'An OAuth app for Gitlab. It allows users to login with their Gitlab account, see their profile information and activities. The application implements OAuth 2.0 without using a third party library like Passport.',
   swedishDescription: 'En OAuth-app för Gitlab. Den tillåter användare att logga in med deras Gitlab-konto, se deras profilinformation och aktiviteter. Applikationen implementerar OAuth 2.0 utan att använda en tredje parts bibliotek som Passport.',
   URL: 'https://gitlab-oauth-nextjs-app.vercel.app',
-  techniques: ['Nextjs', 'Material-UI', 'Typescript', 'Server Side Rendering', 'OAuth 2.0']
+  techniques: ['Nextjs', 'Material-UI', 'Typescript', 'Server-side Rendering', 'OAuth 2.0']
 }, {
   title: 'PWA - Desktop App',
   englishDescription: 'An application that uses service workers, web manifests. The Application look like a desktop and has the following applications: memory game, chat app, tic-ta-toe game, and a clock.',
@@ -38,3 +38,12 @@ export const projects: Project[] = [{
   URL: 'https://rosen-fastigheter.netlify.app',
   techniques: ['Html', 'CSS']
 }]
+
+// snippets app
+// {
+//   title: 'Snippets App',
+//   englishDescription: 'A web application for sharing code snippets. It allows users to create, edit and delete snippets. In addition, it has its own authentication system.',
+//   swedishDescription: 'En webbapplikation för att dela kodsnippet. Den tillåter användare att skapa, redigera och ta bort kodsnippet. Dessutom har den egen autentiseringssystem.',
+//   URL: 'https://snippets-app-auth.herokuapp.com',
+//   techniques: ['Express', 'Nodejs', 'Mongodb', 'Server-side Rendering']
+// }
