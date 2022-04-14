@@ -65,17 +65,17 @@ export const skills: Skill[] = [
     color: '#aabbb6',
   },
   {
-    name: 'C#',
-    level: 40,
+    name: 'ElasticSearch',
+    level: 60,
     color: '#7f3089',
   },
   {
     name: 'Python',
-    level: 60,
+    level: 40,
     color: '#f2c924',
-  },{
-    name:'Nextjs',
-    level:70,
-    color:'#000000',
+  }, {
+    name: 'Nextjs',
+    level: 70,
+    color: '#000000',
   }
 ]

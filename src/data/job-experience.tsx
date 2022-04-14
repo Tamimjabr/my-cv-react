@@ -5,6 +5,7 @@ import CITYGROSS from '../img/citygross-logo.png';
 import BURGERKING from '../img/burgerking-logo.png';
 import JUNIC from '../img/junic-logo.jpg';
 import DAYMAKER from '../img/daymaker-logo.png';
+import APPUNIVERSE from '../img/app-universe.png'
 
 type JobExperience = {
   company: string,
@@ -17,10 +18,18 @@ type JobExperience = {
 
 export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
   {
+    company: 'App Universe Sweden AB',
+    position: 'Frontend Developer',
+    startDate: 'Juni 2022',
+    endDate: 'Pågående',
+    icon: APPUNIVERSE,
+    description: "Frontend utvecklare där arbetsuppgifterna innefattar bland annat att skriva och utveckla kod, arbeta för ökad användarvänlighet, konverteringsoptimering, webbutveckling, underhåll, testning och design"
+  },
+  {
     company: 'Linnéuniversitetet',
     position: 'Lärarassistent',
-    startDate: '2021-09-01',
-    endDate: 'Pågående',
+    startDate: 'September 2021',
+    endDate: 'Mars 2022',
     description: 'Lärarassitent för två kurser. Den ena kursen var "Klientsidan" och den andra kursen var "Serversidan". Mina arbetsuppgifter var att hjälpa studenter från årskurs 1 för att lösa olika programmeringsproblem',
     icon: LNU
   }
@@ -28,7 +37,7 @@ export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
     company: 'Postnord',
     position: 'Brevbärare',
     startDate: 'Februari 2016',
-    endDate: 'Pågående',
+    endDate: 'Maj 2022',
     description: 'Jag har jobbat på Postnord i Smålandsstenar i mer än 6 år (från 25/2/2016), mina arbetsuppgifter: sortering och utdelning av post med bil till företag, hushåll och postombud.',
     icon: POSTNORD
   },
