@@ -39,13 +39,13 @@ export const skills: Skill[] = [
   },
   {
     name: 'Node.js',
-    level: 95,
+    level: 90,
     color: '#64995f',
     icon: 'https://img.icons8.com/color/48/000000/nodejs.png',
   },
   {
     name: 'Express',
-    level: 95,
+    level: 90,
     color: '#31312f',
     icon: 'https://img.icons8.com/color/48/000000/express.png',
   },
