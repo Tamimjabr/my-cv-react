@@ -38,7 +38,7 @@ const ContactInfo = () => {
             <HomeRoundedIcon />
           </Avatar>
         </ListItemAvatar>
-        <p>Annerogatan 1B <br />333 30 Smålandsstenar <br /> Gislaved</p>
+        <p>Doktorsgatan 36 <br />331 56 Värnamo </p>
       </ListItem>
       <Divider />
       <ListItem data-aos='slide-right'>
