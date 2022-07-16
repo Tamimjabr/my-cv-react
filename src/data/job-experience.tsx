@@ -23,7 +23,7 @@ export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
     startDate: 'Juni 2022',
     endDate: 'Pågående',
     icon: COMPILEIT,
-    description: "Frontend utvecklare där arbetsuppgifterna innefattar bland annat att skriva och utveckla kod, arbeta för ökad användarvänlighet, konverteringsoptimering, webbutveckling, underhåll, testning och design"
+    description: "Frontend utvecklare där arbetsuppgifterna innefattar bland annat att skriva och utveckla kod, arbeta för ökad användarvänlighet, konverteringsoptimering, webbutveckling, underhåll, testning och design. Utförda Uppdrag: Tickly (O'Learys biljettsystem) och Barncancerfonden (minuter som gör skillnad)"
   },
   {
     company: 'Linnéuniversitetet',
