@@ -5,7 +5,7 @@ import CITYGROSS from '../img/citygross-logo.png';
 import BURGERKING from '../img/burgerking-logo.png';
 import JUNIC from '../img/junic-logo.jpg';
 import DAYMAKER from '../img/daymaker-logo.png';
-import APPUNIVERSE from '../img/app-universe.png'
+import COMPILEIT from '../img/compileit.png'
 
 type JobExperience = {
   company: string,
@@ -18,11 +18,11 @@ type JobExperience = {
 
 export const JOB_EXPERIENCE_ARRAY: JobExperience[] = [
   {
-    company: 'App Universe Sweden AB',
-    position: 'Frontend Developer',
+    company: 'Compileit Sweden AB',
+    position: 'Full-stack Utvecklare',
     startDate: 'Juni 2022',
     endDate: 'Pågående',
-    icon: APPUNIVERSE,
+    icon: COMPILEIT,
     description: "Frontend utvecklare där arbetsuppgifterna innefattar bland annat att skriva och utveckla kod, arbeta för ökad användarvänlighet, konverteringsoptimering, webbutveckling, underhåll, testning och design"
   },
   {
